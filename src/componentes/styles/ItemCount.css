@@ -1,0 +1,37 @@
+.count-container__contador {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  width: 140px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 40px auto 0;
+}
+
+.count-container__button {
+  color: let(--primary-color);
+  width: 100%;
+  height: 100%;
+  border: 1px solid let(--border-color);
+  font-size: 1.6rem;
+  transition: all 250ms ease-out;
+}
+
+.count-container__button:hover {
+  border: none;
+  color: let(--just-white);
+  background-color: let(--primary-color);
+}
+
+.count-container__button[disabled] {
+  color: let(--border-color);
+  background-color: transparent;
+  border: 1px solid let(--border-color);
+}
+
+.count-container__qty {
+  height: 100%;
+  padding-top: 10px;
+  color: let(--primary-color);
+  background-color: let(--just-white);
+}
